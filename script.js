@@ -6,15 +6,11 @@ addBtn.addEventListener('click', () => {
     const taskText = taskInput.value.trim();
     if (taskText !== '') {
         const listItem = document.createElement('li');
-        listItem.classList.add('task-item');
         listItem.textContent = taskText;
-        // toggle completed on click
+        listItem.classList.add('task-item');
+        // toggle completed on click and remove the item
         listItem.addEventListener('click', () => {
             listItem.classList.toggle('completed');
-        });
-
-        // remove item on double-click
-        listItem.addEventListener('dblclick', () => {
             listItem.remove();
         });
 
