@@ -6,6 +6,7 @@ addBtn.addEventListener('click', () => {
     const taskText = taskInput.value.trim();
     if (taskText !== '') {
         const listItem = document.createElement('li');
+        listItem.classList.add('task-item');
         listItem.textContent = taskText;
         // toggle completed on click
         listItem.addEventListener('click', () => {

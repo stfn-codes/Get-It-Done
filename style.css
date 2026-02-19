@@ -75,4 +75,8 @@ h1 {
 
 .task-item {
     color: #3d2c1e;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
 }
