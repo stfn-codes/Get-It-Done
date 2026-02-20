@@ -80,9 +80,6 @@ h1 {
     font-size: 20px;
     margin-bottom: 12px;
     cursor: pointer;
-}
-
-.task-item {
     border: 2px solid #3d2c1e;
     border-radius: 999px;
     padding: 8px 16px;

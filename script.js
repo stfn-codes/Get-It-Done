@@ -2,7 +2,7 @@ const taskInput = document.getElementById('taskInput');
 const addBtn = document.getElementById('addBtn');
 const taskList = document.getElementById('taskList');
 
-addBtn.addEventListener('click', () => {
+function addTask() {
     const taskText = taskInput.value.trim();
     if (taskText !== '') {
         const listItem = document.createElement('li');
@@ -19,4 +19,9 @@ addBtn.addEventListener('click', () => {
     } else {
         alert('Please enter a task.');
     }
+}
+
+addBtn.addEventListener('click', addTask);
+taskInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') addTask();
 });
